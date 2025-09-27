@@ -8,7 +8,8 @@ const observer = new IntersectionObserver((entries) => {
     }
   });
 }, {
-  threshold: 0.2 // Trigger when 10% is visible
+  threshold: 0,
+  rootMargin: '30px' // Trigger when element is 30px from the viewport
 });
 
 document.querySelectorAll('.fade-up').forEach(el => {

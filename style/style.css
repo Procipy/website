@@ -1,129 +1,5 @@
 
-:root {
-    --primary-blue: #00bcd4;
-    --primary-dark: #003d63;
-    --primary-light: #005C96;
-    --secondary-color: #f4f4f4;
-    --text-color: #333;
-    --border-radius: 8px;
-    --transition-speed: 0.3s;
-}
 
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
-    line-height: 1.6;
-}
-
-.main-section {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-/* =-=-=-=-=HEADER=-=-=-=-= */
-header {
-    background-color: var(--primary-dark);
-    color: white;
-    padding-top: 10px;
-    text-align: center;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-}
-
-header h1 {
-    font-size: 1.8em;
-}
-
-footer {
-    background-color: var(--primary-dark);
-    color: white;
-    text-align: center;
-    padding: 15px 0;
-    margin-top: 50px;
-}
-
-.upper-header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-}
-
-.header-nav{
-    display: flex;
-    justify-content: center;
-    padding: 10px 0;
-    background-color: var(--primary-light);
-    box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.7);
-}
-
-.header-nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-.header-nav li {
-    display: inline;
-    margin: 0 15px;
-}
-
-.header-nav a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold; 
-    transition: color 0.3s ease;
-}
-
-.header-nav a:hover {
-    color: #00bcd4;
-}
-
-.logo-ufac {
-    width: 80px;
-    height: auto;
-    margin-right: 20px;
-}
-
-
-
-/* =-=-=-=-=CONTAINER=-=-=-=-= */
-
-.container {
-    width: 70%;
-    /* max-width: 900px; */
-    margin: 20px auto 20px auto;
-    /* espaço para header fixo */
-    background: white;
-    padding: 40px;
-    border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-}
-
-.titulo-curso {
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-.titulo-curso h2 {
-    font-size: 3em;
-    color: #005187;
-}
 
 
 .info {
@@ -216,7 +92,7 @@ margin-top: 100px;
 .feature-icon {
     width: 80px;
     height: 80px;
-    background: linear-gradient(135deg, #003d63, #f4f4f4);
+    background: linear-gradient(135deg, var(--primary-dark), var(--primary-blue));
     display: flex;
     align-items: center;
     justify-content: center;

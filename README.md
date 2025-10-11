@@ -5,7 +5,7 @@ Aqui você encontrará os arquivos HTML, CSS e demais recursos usados para const
 
 🔗 **Repositório:** [https://github.com/Procipy/website](https://github.com/Procipy/website)
 
-🎥 **Vídeo Tutorial:** Para uma verção em vídeo deste mesmo manual de de uso acesse: [https://github.com/Procipy/website](https://github.com/Procipy/website)
+🎥 **Vídeo Tutorial:** Para uma verção em vídeo deste mesmo manual de de uso acesse: [Vídeo Tutorial](https://drive.google.com/file/d/1C6WBz3owacP9oF-Par2EicX3LCoE7bVA/view?usp=drive_link)
 
 ---
 

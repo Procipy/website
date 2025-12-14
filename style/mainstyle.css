@@ -129,7 +129,7 @@ footer {
 
 .container p{
     font-size: 1.2em;
-    
+    text-align: justify;
     font-family: "Roboto Serif", serif;
     line-height: 1.6;
     letter-spacing: 0.5px;
@@ -137,16 +137,18 @@ footer {
     
 }
 
-.container li{
+.container a{
     font-size: 1.2em;
-    list-style-position: inside;
+    text-align: justify;
     font-family: "Roboto Serif", serif;
     line-height: 1.6;
     letter-spacing: 0.5px;
-    padding-left: 60px; /* espaço para o indicador */
+    color: #000000;
+    overflow-wrap: break-word;
     
-
 }
+
+
 
 .container p::first-letter {
   font-size: 1.5em;   /* deixa maior */
@@ -170,6 +172,16 @@ footer {
     text-shadow: 1px 1px 0px rgba(0,0,0,0.3); /* espalhamento */
     position: relative;
     padding-left: 60px; /* espaço para o indicador */
+}
+
+.container li{
+    font-size: 1.2em;
+    list-style-position: inside;
+    font-family: "Roboto Serif", serif;
+    line-height: 1.6;
+    letter-spacing: 0.5px;
+    padding-left: 60px; /* espaço para o indicador */
+
 }
 
 .container h3{
@@ -219,6 +231,15 @@ iframe {
 }
 
 
+
+
+
+
+
+
+
+
+
 /* =-=-=-=-=CONTACTS=-=-=-=-= */
 
 
@@ -259,7 +280,7 @@ text-decoration: underline;
 }
 
 
-@media (max-width: 520px) {
+@media (max-width: 768px) {
 .contact-item strong {
 display: block;
 width: auto;
@@ -272,8 +293,21 @@ margin-bottom: 0.25rem;
 
 
 @media (max-width: 768px) {
+
+.container {
+    width: 90%;
+    /* max-width: 900px; */
+    margin: 10px auto 10px auto;
+    /* espaço para header fixo */
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
 .container h3{
-    font-size: 1.5em;
+    font-size: 1.2em;
     font-family: "Roboto Serif", serif;
     line-height: 1.6;
     letter-spacing: 2px;
@@ -314,7 +348,7 @@ margin-bottom: 0.25rem;
 }
 
 .container p::first-letter {
-  font-size: 1.3em;   /* deixa maior */
+  font-size: 1.6em;   /* deixa maior */
   font-weight: bold;  /* em negrito */
   float: left;        /* "gruda" na margem */
 
@@ -323,4 +357,57 @@ margin-bottom: 0.25rem;
   font-family: "Roboto Serif", serif; /* fonte estilizada */
 }
 
+.container h4{
+
+    font-size: 1em;
+    font-family: "Roboto Serif", serif;
+    line-height: 1.6;
+    letter-spacing: 2px;
+    color: var(--primary-dark);
+
+    text-transform: uppercase;
+    text-shadow: 1px 1px 0px rgba(0,0,0,0.3); /* espalhamento */
+    position: relative;
+    padding-left: 10px; /* espaço para o indicador */
+}
+
+.container li{
+    font-size: 1em;
+    list-style-position: inside;
+    font-family: "Roboto Serif", serif;
+    line-height: 1.6;
+    letter-spacing: 0.5px;
+    padding-left: 10px; /* espaço para o indicador */
+}
+
+/* -----Contacts----- */
+.contact-link {
+word-break: break-all;
+text-decoration: none;
+color: inherit;
+font-size: 1em !important;
+}
+
+/* -----Header----- */
+
+header {
+    background-color: var(--primary-dark);
+    color: white;
+    padding-top: 10px;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 1.2em;
+    width: 70%;
+}
+.logo-ufac {
+    width: 60px;
+    height: auto;
+}
 }

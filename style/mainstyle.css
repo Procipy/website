@@ -11,8 +11,6 @@
 }
 
 
-
-
 * {
     margin: 0;
     padding: 0;
@@ -125,6 +123,7 @@ footer {
     padding: 40px;
     border-radius: 12px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
     
 }
 
@@ -266,4 +265,62 @@ display: block;
 width: auto;
 margin-bottom: 0.25rem;
 }
+}
+
+
+/* =-=-=-=-=MOBILE=-=-=-=-= */
+
+
+@media (max-width: 768px) {
+.container h3{
+    font-size: 1.5em;
+    font-family: "Roboto Serif", serif;
+    line-height: 1.6;
+    letter-spacing: 2px;
+    color: var(--primary-dark);
+    margin-top: 20px;
+
+    text-transform: uppercase;
+    text-shadow: 2px 2px 0px rgba(0,0,0,0.3); /* espalhamento */
+    position: relative;
+    padding-left: 15px; /* espaço para o indicador */
+}
+
+.container h3::before {
+  content: "◆";               /* indicador (pode trocar por ■, ➤, →, etc.) */
+  position: absolute;
+  line-height: 2.5;
+  left: 0;
+  color: var(--primary-dark); /* cor do indicador */
+  font-size: 0.6em;
+}
+
+.titulo-curso h2 {
+    font-family: "Roboto Serif", serif;
+    font-size: 2em;
+    line-height: 1.6;
+    letter-spacing: 0.5px;
+    color: var(--primary-dark);
+}
+
+.container p{
+    font-size: 1em;
+    
+    font-family: "Roboto Serif", serif;
+    line-height: 1.6;
+    letter-spacing: 0.5px;
+    color: #000000;
+    
+}
+
+.container p::first-letter {
+  font-size: 1.3em;   /* deixa maior */
+  font-weight: bold;  /* em negrito */
+  float: left;        /* "gruda" na margem */
+
+  line-height: 0.8;     /* ajusta alinhamento */
+  color: var(--primary-dark);     /* cor */
+  font-family: "Roboto Serif", serif; /* fonte estilizada */
+}
+
 }

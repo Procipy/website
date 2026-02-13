@@ -56,22 +56,21 @@ margin-top: 100px;
 /* =-=-=-=-=-= GRID =-=-=-=-=-= */
 
 
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      grid-template-rows: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 10px 10px;
-      width: 90%;
-      height: auto;
-    
-    }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 16px;
+            width: min(1100px, 90%);
+            align-items: stretch;
+        }
 
 .feature-card {
     display: flex;
     height: 100%;
+    min-height: 320px;
     width: 100%;
     flex-direction: column;
-    justify-content: left;
+    justify-content: flex-start;
     border: 3px solid #003d63;
     padding: 3rem;
     position: relative;
@@ -122,8 +121,10 @@ margin-top: 100px;
 
 
 .div_link {
-  color: inherit;          /* pega a cor do texto do pai */
-  text-decoration: none; 
+    color: inherit;          /* pega a cor do texto do pai */
+    text-decoration: none;
+    display: block;
+    height: 100%;
 }
 
 
